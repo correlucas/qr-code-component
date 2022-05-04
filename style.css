@@ -1,0 +1,38 @@
+/* Colors */
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(212, 45%, 89%);
+  --grayish-blue: hsl(212, 45%, 89%);
+  --dark-blue: hsl(212, 45%, 89%);
+}
+
+* {
+  font-family: 'Outfit', sans-serif;
+}
+
+.white {
+  color: var(--white);
+}
+
+.light-gray {
+  color: var(--light-gray);
+}
+
+.grayish-blue {
+  color: var(--grayish-blue);
+}
+
+.dark-blue {
+  color: var(--dark-blue);
+}
+
+
+/* Main CSS */
+.font-p {
+  size: 0.9375rem;
+}
+
+body {
+  background-color: var(--light-gray);
+}
