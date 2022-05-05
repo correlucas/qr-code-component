@@ -58,6 +58,8 @@ body {
   font-size: 1.7rem;
   text-align: center;
   color: var(--dark-blue);
+  display: block;
+  margin: 0 auto;
   padding-top: 36px;
 }
 
