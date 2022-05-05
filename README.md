@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github](https://qr-code-component-teal.vercel.app/)
-- Live Site URL: [https://qr-code-component-teal.vercel.app/](https://qr-code-component-teal.vercel.app/)
+- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/qr-code-component-SJkAUS-Iq)
+- Live Site URL: [Live Site at Vercel](https://qr-code-component-teal.vercel.app/)
 
 
 ## My process
@@ -51,8 +51,8 @@ To center properly a div
 
 ### Useful resources
 
-- [Flexbox Froggy](https://flexboxfroggy.com/) - This help me to undestand the basics about flexbox
-- [CSS Zoom on Hover](https://codepen.io/lucy_wheel/pen/VxYzKP) - This help me to undestand the basics about flexbox
+- [Box Shadow Generator CSS](https://html-css-js.com/css/generator/box-shadow/) - Useful to generate box shadows CSS
+
 
 
 ## Author
