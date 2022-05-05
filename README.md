@@ -31,8 +31,9 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://www.frontendmentor.io/solutions/qr-code-component-SJkAUS-Iq]()
-- Live Site URL: [https://qr-code-component-teal.vercel.app/]()
+- Solution URL: [Github](https://qr-code-component-teal.vercel.app/)
+- Live Site URL: [https://qr-code-component-teal.vercel.app/](https://qr-code-component-teal.vercel.app/)
+
 
 ## My process
 
