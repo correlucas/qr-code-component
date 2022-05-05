@@ -81,6 +81,7 @@ body {
 @media (max-width: 275px) {
   .container img {
     margin: 0 auto;
-    width: 220px;
+    width: 200px;
+    height: 200px;
   }
 }

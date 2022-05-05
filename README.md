@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://www.frontendmentor.io/solutions/order-summary-component-H1GA0z0mq]()
-- Live Site URL: [https://order-summary-component-eight-rho.vercel.app/]()
+- Solution URL: [https://www.frontendmentor.io/solutions/qr-code-component-SJkAUS-Iq]()
+- Live Site URL: [https://qr-code-component-teal.vercel.app/]()
 
 ## My process
 
