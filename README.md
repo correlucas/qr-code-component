@@ -57,7 +57,7 @@ To center properly a div
 
 ## Author
 - Github - [correlucas](https://github.com/correlucas/order-summary-component)
-- Frontend Mentor - [@correlucas](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@correlucas](https://www.frontendmentor.io/profile/correlucas)
 
 
 
