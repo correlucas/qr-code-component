@@ -65,6 +65,7 @@ body {
 
 .container p {
   font-size: 1rem;
+  line-height: 1.3;
   text-align: center;
   color: var(--grayish-blue);
   padding: 24px 0px 36px 0px;
