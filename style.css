@@ -114,8 +114,9 @@ body {
   }
 
   .container p {
-    font-size: 0.9rem;
-    padding-bottom: 4px;
+    font-size: 0.85rem;
+    padding-bottom: 16px;
+    margin: 0;
   }
 
   .qr-box img {
