@@ -61,6 +61,12 @@ body {
   display: block;
   margin: 0 auto;
   padding-top: 36px;
+  transition: ease-in-out 0.5s;
+}
+
+.container h1:hover {
+  color: #2C7DFA;
+  transition: ease-in-out 0.5s;
 }
 
 .container p {
@@ -72,11 +78,28 @@ body {
   margin: 0 20px;
 }
 
-.container img {
+
+.qr-box {
   display: block;
-  margin: 0 auto;
-  border-radius: 10px;
-  width: 320px;
+  margin: auto;
+  overflow: hidden;
+  max-width: 100%;
+  border-radius: 18px;
+  transform: scale(1);
+  background-color: #2C7DFA;
+}
+
+.qr-box img {
+  max-width: 100%;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: ease-in-out 0.5s;
+}
+
+.qr-box img:hover {
+  transform: rotate(90deg) scale(125%);
+  transition: ease-in-out 0.5s;
 }
 
 @media (max-width: 275px) {
