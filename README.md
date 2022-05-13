@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/qr-code-component-SJkAUS-Iq)
-- Live Site URL: [Live Site at Vercel](https://qr-code-component-teal.vercel.app/)
+- Live Site URL: [Live Site at Vercel](https://qr-code-component-f22bx2oqb-correlucas.vercel.app/)
 
 
 ## My process
