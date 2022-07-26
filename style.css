@@ -35,11 +35,23 @@ button {
 }
 
 
+/* :root {
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(212, 45%, 89%);
+  --grayish-blue: hsl(220, 15%, 55%);
+  --dark-blue: hsl(218, 44%, 22%);
+} */
+
 :root {
   --white: hsl(0, 0%, 100%);
   --light-gray: hsl(212, 45%, 89%);
   --grayish-blue: hsl(220, 15%, 55%);
   --dark-blue: hsl(218, 44%, 22%);
+  --hover: hsla(217, 95%, 56%, 1);
+}
+
+.gradient-bg-1 {
+  background: linear-gradient(180deg, #D5E1EF 0%, #A3C8F2 100%);
 }
 
 .white {
@@ -83,26 +95,27 @@ body {
   align-items: center;
   width: 100%;
   height: 100vh;
-  background-color: var(--light-gray);
+  background: linear-gradient(180deg, #D5E1EF 0%, #A3C8F2 100%);
 }
 
 .container {
   flex-wrap: wrap;
   max-width: 320px;
-  background-color: var(--white);
+  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.75) 100%);
   padding: 16px;
+  margin: 24px;
   border-radius: 20px;
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.02);
 }
 
-.qr-box {
+.card {
   display: block;
   margin: auto;
   overflow: hidden;
   max-width: 100%;
   border-radius: 10px;
   transform: scale(1);
-  background-color: #2C7DFA;
+  background: var(--hover);
 }
 
 img {
@@ -154,11 +167,12 @@ p {
 @media (hover:hover) {
   .container:hover {
     transform: scale(1.02);
+    filter: saturate(1.5);
     box-shadow: 5px 5px 15px 5px rgba(0, 46, 87, 0.118);
   }
 
   h1:hover {
-    color: #2C7DFA;
+    color: var(--hover);
     transition: ease-in-out 0.5s;
   }
 
