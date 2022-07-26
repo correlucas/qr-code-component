@@ -1,4 +1,39 @@
-/* Colors */
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: 0;
+  box-sizing: border-box;
+  transition: all ease-in-out 0.5s;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+  line-height: 0;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+
+/* remove all button styles */
+button {
+  all: unset;
+  cursor: pointer;
+}
+
 
 :root {
   --white: hsl(0, 0%, 100%);
@@ -24,12 +59,12 @@
 }
 
 /* Main CSS */
-.font-p {
+p {
   font-size: 1rem;
   font-weight: 400;
 }
 
-.font-h1 {
+h1 {
   font-size: 1.375rem;
   font-weight: 700;
 }
@@ -57,7 +92,7 @@ body {
   background-color: var(--white);
   padding: 16px;
   border-radius: 20px;
-  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.03);
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.02);
 }
 
 .qr-box {
@@ -70,7 +105,7 @@ body {
   background-color: #2C7DFA;
 }
 
-.qr-box img {
+img {
   max-width: 100%;
   display: block;
   width: 100%;
@@ -78,12 +113,7 @@ body {
   transition: ease-in-out 0.5s;
 }
 
-.qr-box img:hover {
-  transform: rotate(90deg) scale(125%);
-  transition: ease-in-out 0.5s;
-}
-
-.container h1 {
+h1 {
   font-size: 1.4rem;
   text-align: center;
   color: var(--dark-blue);
@@ -93,12 +123,7 @@ body {
   transition: ease-in-out 0.5s;
 }
 
-.container h1:hover {
-  color: #2C7DFA;
-  transition: ease-in-out 0.5s;
-}
-
-.container p {
+p {
   font-size: 1rem;
   line-height: 1.4;
   text-align: center;
@@ -108,20 +133,37 @@ body {
 }
 
 @media (max-width: 275px) {
-  .container h1 {
+  h1 {
     font-size: 1.4rem;
     padding-top: 24px;
   }
 
-  .container p {
+  p {
     font-size: 0.85rem;
     padding-bottom: 16px;
     margin: 0;
   }
 
-  .qr-box img {
+  img {
     margin: 0 auto;
     width: 100%;
     height: 100%;
+  }
+}
+
+@media (hover:hover) {
+  .container:hover {
+    transform: scale(1.02);
+    box-shadow: 5px 5px 15px 5px rgba(0, 46, 87, 0.118);
+  }
+
+  h1:hover {
+    color: #2C7DFA;
+    transition: ease-in-out 0.5s;
+  }
+
+  img:hover {
+    transform: rotate(90deg) scale(125%);
+    transition: ease-in-out 0.5s;
   }
 }
