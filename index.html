@@ -23,7 +23,7 @@
     <h1>Improve your front-end skills by building projects</h1>
     <p>Scan the QR code to visit <strong>Frontend Mentor</strong> and take your coding skills to the next level!</p>
     <div class="icons">
-      <img src="./images/dark.svg" alt="dark mode" id="icon">
+      <img src="./images/light.svg" alt="dark mode" id="icon">
     </div>
   </main>
 
@@ -31,10 +31,10 @@
   <script>
     var icon = document.getElementById("icon");
     icon.onclick = function () {
-      document.body.classList.toggle("dark-theme");
-      if (document.body.classList.contains("dark-theme")) {
-        icon.src = "./images/light.svg";
-      } else { icon.src = "./images/dark.svg"; }
+      document.body.classList.toggle("light-theme");
+      if (document.body.classList.contains("light-theme")) {
+        icon.src = "./images/dark.svg";
+      } else { icon.src = "./images/light.svg"; }
     }
   </script>
 

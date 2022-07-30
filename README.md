@@ -47,7 +47,7 @@ Users should be able to:
 
 ### What I learned
 
-To center properly a div
+To create a dark mode mode using variables and JS(my first time using JS.
 
 ### Useful resources
 
