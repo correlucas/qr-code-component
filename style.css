@@ -65,23 +65,11 @@ button {
 
 }
 
-/* Make the light theme the default */
-.theme-container {
-  --p-x: var(--p-light);
-  --h1-x: var(var(--h1-light));
-  --card-x: var(--card-light);
-  --bg-x: var(--bg-light);
-  --hover-x: var(--hover-light);
+#icon {
+  max-width: 24px;
+  max-height: 24px;
 }
 
-/* Override the default theme */
-.dark-mode-checkbox:checked~.theme-container {
-  --p-x: var(--p-dark);
-  --h1-x: var(var(--h1-dark));
-  --card-x: var(--card-dark);
-  --bg-x: var(--bg-dark);
-  --hover-x: var(--hover-dark);
-}
 
 /* Main CSS */
 p {

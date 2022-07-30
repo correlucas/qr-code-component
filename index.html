@@ -16,15 +16,22 @@
 </head>
 
 <body>
-
   <main class="container" aria-label="QR Code Card">
     <div class="card">
       <img src="./images/qr-code.svg" alt="Qr Code Image" width="320" height="320">
     </div>
     <h1>Improve your front-end skills by building projects</h1>
     <p>Scan the QR code to visit <strong>Frontend Mentor</strong> and take your coding skills to the next level!</p>
-    <input id="dark-mode" class="dark-mode-checkbox visually-hidden" type="checkbox">
   </main>
+
+  <img src="./images/dark.svg" alt="dark mode" id="icon">
+
+  <script>
+
+    var icon = document.getElementById("icon");
+    icon.onclick = function () { document.body.classList.toggle("dark-theme")";" }
+
+  </script>
 </body>
 
 </html>
