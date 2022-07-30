@@ -22,14 +22,19 @@
     </div>
     <h1>Improve your front-end skills by building projects</h1>
     <p>Scan the QR code to visit <strong>Frontend Mentor</strong> and take your coding skills to the next level!</p>
+    <img src="./images/dark.svg" alt="dark mode" id="icon">
   </main>
 
-  <img src="./images/dark.svg" alt="dark mode" id="icon">
 
   <script>
 
     var icon = document.getElementById("icon");
-    icon.onclick = function () { document.body.classList.toggle("dark-theme")";" }
+    icon.onclick = function () {
+      document.body.classList.toggle("dark-theme");
+      if (document.body.classList.contains("dark-theme")) {
+        icon.src = "./images/light.svg";
+      } else { icon.src = "./images/dark.svg"; }
+    }
 
   </script>
 </body>
