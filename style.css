@@ -35,38 +35,52 @@ button {
 }
 
 :root {
+  --p-x: var(--p-light);
+  --h1-x: var(var(--h1-light));
+  --card-x: var(--card-light);
+  --bg-x: var(--bg-light);
+  --hover-x: var(--hover-light);
+
   /* light mode */
   --p-light: hsl(220, 15%, 55%);
   --h1-light: hsl(218, 44%, 22%);
   --hover-light: hsla(217, 95%, 56%, 1);
+  --bg-light: hsla(212, 45%, 89%, 1);
   --bg-1-light: #D5E1EF;
   --bg-2-light: #A3C8F2;
-  --card-1-light: hsla(258, 81%, 65%, 1);
-  --card-2-light: hsla(258, 75%, 56%, 0.87);
+  --card-light: rgb(255, 255, 255);
+  --card-1-light: hsla(0, 0%, 100%, 1);
+  --card-2-light: hsla(0, 0%, 100%, 0.6);
 
   /* dark mode */
   --p-dark: hsla(288, 71%, 85%, 1);
   --h1-dark: hsla(302, 77%, 98%, 1);
   --hover-dark: hsla(173, 100%, 72%, 1);
+  --bg-dark: var(hsla(240, 23%, 12%, 1));
   --bg-1-dark: hsla(233, 32%, 10%, 1);
   --bg-2-dark: hsla(259, 60%, 15%, 1);
+  --card-dark: hsla(258, 81%, 65%, 1);
   --card-1-dark: hsla(258, 81%, 65%, 1);
-  --card-2-dark: hsla(258, 75%, 56%, 0.87);
+  --card-2-dark: hsla(258, 75%, 56%, 0.9);
+
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --paragraph: hsla(288, 71%, 85%, 1);
+/* Make the light theme the default */
+.theme-container {
+  --p-x: var(--p-light);
+  --h1-x: var(var(--h1-light));
+  --card-x: var(--card-light);
+  --bg-x: var(--bg-light);
+  --hover-x: var(--hover-light);
+}
 
-
-    --bg-1: #121423;
-    --bg-2: #1F103F;
-
-    --card-1: #895FEE;
-    --card-2: rgba(109, 60, 227, 0.87) 100%;
-
-    --hover: hsla(238, 34%, 31%, 1);
-  }
+/* Override the default theme */
+.dark-mode-checkbox:checked~.theme-container {
+  --p-x: var(--p-dark);
+  --h1-x: var(var(--h1-dark));
+  --card-x: var(--card-dark);
+  --bg-x: var(--bg-dark);
+  --hover-x: var(--hover-dark);
 }
 
 /* Main CSS */
@@ -94,17 +108,19 @@ body {
   align-items: center;
   width: 100%;
   height: 100vh;
-  background: linear-gradient(180deg, var(--bg-1-light) 0%, var(--bg-2-light) 100%);
+  background-color: var(--bg-x);
+  /* background: linear-gradient(180deg, var(--bg-1-light) 0%, var(--bg-2-light) 100%); */
 }
 
 .container {
   flex-wrap: wrap;
   max-width: 320px;
-  background: var(--card-light);
   padding: 16px;
   margin: 24px;
   border-radius: 20px;
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.02);
+  background: var(--card-x);
+  /* background: linear-gradient(180deg, var(--card-1-light) 0%, var(--card-2-light) 100%); */
 }
 
 .card {
@@ -114,7 +130,7 @@ body {
   max-width: 100%;
   border-radius: 10px;
   transform: scale(1);
-  background: var(--hover);
+  background: var(--hover-x);
 }
 
 img {
@@ -128,7 +144,7 @@ img {
 h1 {
   font-size: 1.4rem;
   text-align: center;
-  color: var(--dark-blue);
+  color: var(--h1-x);
   display: block;
   margin: 0 auto;
   padding-top: 36px;
@@ -139,7 +155,7 @@ p {
   font-size: 1rem;
   line-height: 1.4;
   text-align: center;
-  color: var(--paragraph);
+  color: var(--p-x);
   padding: 24px 0px 36px 0px;
   margin: 0 24px;
 }
