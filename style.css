@@ -39,7 +39,7 @@ button {
   --h1-x: var(--h1-dark);
   --card-x: var(--card-dark);
   --bg-x: var(--bg-dark);
-  --hover-x: var(--hover-dark);
+  --hover-x: var(--hover-light);
 
   /* light mode */
   --p-light: hsl(220, 15%, 55%);
@@ -205,5 +205,30 @@ p {
 
   .card img {
     transition: ease-in-out 0.7s;
+  }
+}
+
+
+.container,
+.container img,
+h1,
+p {
+  -webkit-animation: slideIn 1s ease-in;
+  animation: slideIn 1s ease-out;
+}
+
+/* intro animation */
+
+@-webkit-keyframes slideIn {
+  0% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateX(0px);
+    opacity: 1;
   }
 }
