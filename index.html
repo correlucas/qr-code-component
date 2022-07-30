@@ -22,12 +22,13 @@
     </div>
     <h1>Improve your front-end skills by building projects</h1>
     <p>Scan the QR code to visit <strong>Frontend Mentor</strong> and take your coding skills to the next level!</p>
-    <img src="./images/dark.svg" alt="dark mode" id="icon">
+    <div class="icons">
+      <img src="./images/dark.svg" alt="dark mode" id="icon">
+    </div>
   </main>
 
 
   <script>
-
     var icon = document.getElementById("icon");
     icon.onclick = function () {
       document.body.classList.toggle("dark-theme");
@@ -35,8 +36,8 @@
         icon.src = "./images/light.svg";
       } else { icon.src = "./images/dark.svg"; }
     }
-
   </script>
+
 </body>
 
 </html>
